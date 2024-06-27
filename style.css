@@ -1,0 +1,23 @@
+.boas-vindas{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.espaco{
+    border: solid;
+    border-radius: 2rem;
+    border-color: green;
+}
+
+.calculo{
+    text-align: center;
+    margin: 2rem;
+}
+
+input{
+    text-align: center;
+}
+
+.resultado{
+    text-align: center;
+}
