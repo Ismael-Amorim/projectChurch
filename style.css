@@ -11,6 +11,12 @@
   }
 
 .boas-vindas h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+    /*
+.boas-vindas h3{
     text-transform: uppercase;
     background-image: linear-gradient(
       -225deg,
@@ -30,6 +36,7 @@
     display: inline-block;
     font-weight: bold;
   }
+    */
 
 .espaco{
     border: solid;
