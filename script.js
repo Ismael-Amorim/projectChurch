@@ -1,13 +1,13 @@
 const dizimo = document.querySelector('#valor-dizimo');
 const valor_dizimo = document.querySelector('#dizimo');
-const valor_oferta = document.querySelector('#oferta');
+const valor_pacto = document.querySelector('#pacto');
 const botao = document.querySelector('#botao');
 const percentual_dizimo = 0.10;
-const percentual_oferta = 0.01;
+const percentual_pacto = 0.01;
 
 botao.addEventListener('click', () => {
     valor_dizimo.innerHTML = resultado_dizimo();
-    valor_oferta.innerHTML = resultado_oferta();
+    valor_pacto.innerHTML = resultado_pacto();
 })
 
 function resultado_dizimo() {
@@ -21,12 +21,12 @@ function resultado_dizimo() {
     return valorFormatado;
   }
 
-function resultado_oferta(){
-    var valorOferta =  dizimo.value * percentual_oferta;
+function resultado_pacto(){
+    var valorPacto =  dizimo.value * percentual_pacto;
 
-    var ofertaFormatado = valorOferta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
+    var pactoFormatado = valorPacto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
 
-    return ofertaFormatado;
+    return pactoFormatado;
 }
 
 function formatarReal(valor) {
